@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href= "/products.css">
+  <title>Продукты</title>
+</head>
+<table>
+  <tr>
+    <th>Наименование</th>
+    <th>Описание</th>
+    <th>Цена</th>
+    <th>Фото</th>
+    <th></th>
+  </tr>
+  <form action="/products.html"  method='POST'>
+  <tr>
+    <input type="hidden" value="{{row.id}}" name='item_id'>
+    <td>Свежая Колбаса</td>
+    <td>{{row.description}}</td>
+    <td>{{row.price}}</td>
+    <td><img src="{{row.image}}"  width="120" height="90" /></td>
+    <td><button type="submit">В корзину</button></td>
+  </tr>
+  </form>
+</table>
+</html>

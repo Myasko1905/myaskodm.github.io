@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% block head %}
+    <title>Перфоратор</title>
+    <link rel="stylesheet" href= "/static/css/prod.css">
+{% endblock %}
+
+{% block content %}
+ <div>
+     <div class = 'text'>
+         <img src = "/static/images/noni.jpg" width="300" height="300">
+         <h1>Перфоратор Makita HR2470 </h1>
+         <h1>7 499 рублей</h1>
+         <b><p>
+            Тип двигателя: бесщеточный<br>
+            Наличие реверса: есть<br>
+            Перфоратор с пылесосом: опция<br>
+            С пыльником: нет<br>
+            Тип аккумулятора: Li-Ion<br>
+            Напряжение аккумулятора: 40 В<br>
+            Наличие быстросменного патрона: есть<br>
+            </p></b>
+<a href="/products">Купить здесь </a>
+     </div>
+     {% if lucky_num > 8 %}
+<img src="/static/images/python_kodland.jpg">
+{% endif %}
+ </div>
+{% endblock %}

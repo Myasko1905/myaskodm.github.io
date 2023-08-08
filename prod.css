@@ -1,0 +1,36 @@
+img {
+    float: left;
+    border: double 5px #a13f3f;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+body{
+    background-color: #a13f3f;
+}
+.btn-group button {
+    font-size:20px;
+    background-color: #a83149; /* фон */
+    border: 3px solid #a83149; /* border */
+    padding: 40px 24px; /* Немного отступа */
+    cursor: pointer; /* Указатель/значок руки */
+    width: 75%; /* Установите ширину, если это необходимо */
+    display: block; /* Сделайте так, чтобы кнопки располагались друг под другом */
+  }
+
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Предотвращение двойных границ */
+  }
+  
+  /* Добавление цвета фона при наведении курсора */
+  .btn-group button:hover {
+    background-color: #e78e8e;
+  }
+  .btn-group a {
+    text-decoration: none;
+    color: white;
+  }
+  .btn-group{
+    background-color: #a83149;
+    position: fixed;
+    height: 100%;
+  }
